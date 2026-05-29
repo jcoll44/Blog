@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav">
+        <a href="https://jacktcollins.com">jacktcollins.com</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author }}.</p>
+    </div>
+  </footer>
+</body>
+</html>

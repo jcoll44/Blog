@@ -1,0 +1,29 @@
+title: Jack Collins
+tagline: Notes on robotics, learning, and foundation models
+description: >-
+  Writing on robotics foundation models, policy learning, and machine learning by Jack Collins.
+author: Jack Collins
+url: "https://blog.jacktcollins.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
+
+permalink: /:year/:month/:day/:title.html
+
+# Enable MathJax rendering of LaTeX in posts/pages
+mathjax: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
